@@ -20,9 +20,10 @@
     "tinyglobby": "^0.2.14"
   },
   "scripts": {
+    "init-db": "node initDb.js",
     "dev": "vite",
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "json-server --watch db.json --port 3000"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/andresfelipe07b/Interaction-with-Servers-and-API-Consumption/issues"
   },
