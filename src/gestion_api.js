@@ -18,9 +18,10 @@ function getProducts() {
 function getProductById(id) {
     axios.get(`${api}products/${id}`)
         .then(response => {
-            console.log("Producto por el id 1: ", response.data)
+            console.log("Producto por el id: ", response.data)
         })
         .catch(error => {
+            console.log(error)
         })
 }
 
